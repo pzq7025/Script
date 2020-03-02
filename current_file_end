@@ -1,0 +1,6 @@
+import os
+str_file = 'txt'
+dir_file = os.getcwd()
+file_list = os.listdir(dir_file)
+target_file = [i for i in file_list if os.path.splitext(i)[-1] == '.' + str_file]
+print(target_file)
